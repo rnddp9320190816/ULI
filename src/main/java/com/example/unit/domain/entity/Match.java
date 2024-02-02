@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
+import org.springframework.transaction.annotation.Transactional;
 
 @Table(name="MATCH")
 @Builder
@@ -25,7 +26,8 @@ public class Match {
     @JoinColumn(name = "GROUND_ID")
     private Ground ground;
 
-
+    @Transient
+    public static Long a;
 
 
 
