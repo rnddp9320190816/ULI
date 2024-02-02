@@ -25,7 +25,6 @@ public class Match {
     @JoinColumn(name = "GROUND_ID")
     private Ground ground;
 
-    pu()
 
 
 
